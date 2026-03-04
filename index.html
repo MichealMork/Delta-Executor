@@ -3,284 +3,320 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delta Executor 2024 – Riscos, Verdades e Acesso Oficial</title>
-    <meta name="description" content="Análise completa do Delta Executor para Roblox: funcionalidades, perigos de malware, política de banimento e como identificar o site oficial. Informação clara e responsável.">
+    <title>Delta Executor · Análise Técnica & Acesso Oficial</title>
+    <meta name="description" content="Delta Executor para Roblox: review aprofundado, vetores de risco, política de banimento e identificação do site legítimo. Design informativo e responsável.">
     <link rel="canonical" href="https://deltaxecutor.com.br/">
-    <meta name="robots" content="index, follow">
     <meta name="google-site-verification" content="pm7UAtokMKaETEVF8r7uchMddDDEyAzFwn6kvOVZhAM">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Inter', 'Segoe UI', Roboto, system-ui, sans-serif;
         }
+
         body {
-            background: linear-gradient(145deg, #e9eef3 0%, #dbe1e8 100%);
-            padding: 2rem 1rem;
-            min-height: 100vh;
+            background: #0e1420;
+            font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            padding: 2rem 1.5rem;
             display: flex;
             align-items: center;
             justify-content: center;
+            min-height: 100vh;
         }
-        .trust-card {
-            max-width: 1100px;
-            margin: 0 auto;
-            background: rgba(255,255,255,0.95);
+
+        .delta-card {
+            max-width: 1200px;
+            width: 100%;
+            background: #1b2332;
+            border-radius: 3.5rem;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(66, 153, 225, 0.2) inset;
+            padding: 3rem 3.2rem;
             backdrop-filter: blur(2px);
-            border-radius: 2.5rem;
-            box-shadow: 0 30px 60px -15px rgba(10, 30, 60, 0.3), inset 0 1px 3px rgba(255,255,255,0.6);
-            padding: 3rem 3.5rem;
-            border: 1px solid rgba(255,255,255,0.7);
         }
-        .content {
-            position: relative;
-            z-index: 5;
+
+        .glass-panel {
+            background: rgba(18, 26, 40, 0.9);
+            border-radius: 2.8rem;
+            padding: 2.5rem;
+            border: 1px solid #2d3f60;
         }
-        .brand-logo {
+
+        .logo-area {
             display: flex;
             justify-content: center;
-            margin-bottom: 2rem;
+            margin-bottom: 2.8rem;
         }
-        .brand-logo img {
-            max-width: 260px;
+
+        .logo-area img {
+            max-width: 280px;
             width: 100%;
-            height: auto;
-            filter: drop-shadow(0 8px 12px rgba(0,85,170,0.15));
-            border-radius: 18px;
-            transition: transform 0.2s;
+            border-radius: 24px;
+            filter: drop-shadow(0 10px 18px #00000060);
+            border: 1px solid #3b4f70;
         }
-        .brand-logo img:hover {
-            transform: scale(1.01);
-        }
+
         h1 {
-            font-size: 2.9rem;
+            font-size: 3.2rem;
             font-weight: 700;
-            line-height: 1.2;
-            text-align: center;
-            background: linear-gradient(115deg, #0f2b5c 0%, #1d4ed8 60%, #2563eb 100%);
+            background: linear-gradient(130deg, #c0d4ff, #a0c0ff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            margin-bottom: 1.2rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
             letter-spacing: -0.02em;
+            text-align: center;
         }
-        h2 {
-            font-size: 2.1rem;
-            font-weight: 650;
-            color: #0b1f4a;
-            margin: 2.2rem 0 1.2rem 0;
-            padding-bottom: 0.4rem;
-            border-bottom: 4px solid #93c5fd;
-            display: inline-block;
+
+        .subhead {
+            color: #98aed6;
+            font-size: 1.3rem;
+            text-align: center;
+            margin-bottom: 2.8rem;
+            border-bottom: 2px dashed #2a3a55;
+            padding-bottom: 1.2rem;
         }
-        h3 {
-            font-size: 1.6rem;
-            color: #1e3a8a;
-            margin: 1.8rem 0 1rem;
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 2.8rem 0;
+        }
+
+        .info-panel {
+            background: #101826;
+            border-radius: 2.2rem;
+            padding: 2rem;
+            border: 1px solid #2e3f5e;
+            box-shadow: 0 12px 25px -15px #000;
+        }
+
+        .info-panel h2 {
+            color: #bfd6ff;
+            font-size: 1.8rem;
             font-weight: 600;
+            margin-bottom: 1.5rem;
+            border-left: 5px solid #3b82f6;
+            padding-left: 1.2rem;
         }
-        p {
-            color: #2c3e5c;
-            font-size: 1.12rem;
-            margin-bottom: 1.8rem;
-            line-height: 1.7;
+
+        .info-panel p, li {
+            color: #b0c3e0;
+            font-size: 1.08rem;
+            line-height: 1.6;
+            margin-bottom: 1.2rem;
         }
-        .feature-block {
-            background: #f0f6ff;
-            border-radius: 32px;
-            padding: 2.2rem;
-            margin: 2.5rem 0;
-            border: 1px solid #b9d5fd;
-            box-shadow: inset 0 2px 5px #ffffff, 0 10px 15px -10px #1e3a8a40;
+
+        .info-panel ul {
+            padding-left: 1.6rem;
         }
-        .danger-zone {
-            background: #fff8eb;
-            border-left: 10px solid #f97316;
-            border-radius: 28px;
-            padding: 2rem 2.3rem;
-            margin: 2.5rem 0;
-            box-shadow: 0 8px 18px -6px #ed6f2e40;
+
+        .info-panel li {
+            margin-bottom: 0.7rem;
         }
-        .danger-zone h3 {
-            color: #b45309;
-            margin-top: 0;
-        }
-        .shield-badge {
-            background: #1e293b;
+
+        .hazard-tag {
+            display: inline-block;
+            background: #dc2626;
             color: white;
-            padding: 0.4rem 1.4rem;
+            font-weight: 700;
+            padding: 0.3rem 1.4rem;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 1.2rem;
+            border: 1px solid #ff8a8a;
+        }
+
+        .img-fluid {
+            max-width: 100%;
+            border-radius: 2rem;
+            margin: 2rem 0;
+            border: 2px solid #2b3f60;
+            box-shadow: 0 20px 25px -15px #000;
+        }
+
+        .badge-safe {
+            background: #1e3a5f;
+            color: #aac8ff;
             border-radius: 60px;
+            padding: 0.25rem 1.2rem;
             font-weight: 600;
             font-size: 0.9rem;
             display: inline-block;
-            letter-spacing: 0.3px;
-            margin-bottom: 1rem;
+            border: 1px solid #3f6290;
         }
-        .img-responsive {
-            max-width: 100%;
-            height: auto;
-            border-radius: 24px;
-            margin: 2.2rem 0;
-            box-shadow: 0 20px 28px -12px #1e293b80;
-            border: 2px solid white;
-        }
-        .action-center {
-            text-align: center;
-            margin: 3rem 0 2rem;
-        }
-        .oficial-link {
-            background: linear-gradient(135deg, #1450c0, #1e3c8f);
+
+        .button-x {
+            background: linear-gradient(145deg, #00337a, #001b4e);
             color: white;
+            font-size: 1.4rem;
             font-weight: 700;
-            font-size: 1.3rem;
-            padding: 1.2rem 3.2rem;
+            padding: 1.4rem 3.5rem;
             border-radius: 120px;
             text-decoration: none;
             display: inline-block;
-            box-shadow: 0 18px 30px -12px #0a2f77;
-            border: 1px solid #a5c9ff;
-            transition: all 0.25s;
-            letter-spacing: 0.3px;
+            margin: 2rem 0 1rem;
+            border: 1px solid #6189cf;
+            box-shadow: 0 20px 30px -12px #001437;
+            transition: 0.15s;
         }
-        .oficial-link:hover {
-            background: linear-gradient(135deg, #0537a0, #102b6a);
-            transform: translateY(-4px);
-            box-shadow: 0 28px 38px -16px #0e2870;
+
+        .button-x:hover {
+            background: linear-gradient(145deg, #002b6a, #000f33);
+            transform: scale(1.02);
+            border-color: #8bb2ff;
         }
-        .disclaimer-small {
-            font-size: 0.9rem;
-            color: #4b5b78;
-            margin-top: 0.8rem;
+
+        .accordion {
+            margin: 2.5rem 0 0.5rem;
         }
-        .faq-item {
-            background: #ffffffd6;
-            border-radius: 24px;
-            margin: 1.2rem 0;
-            border: 1px solid #cfdff5;
+
+        .accord-item {
+            background: #101b2b;
+            border-radius: 1.8rem;
+            margin-bottom: 1.2rem;
+            border: 1px solid #293a57;
         }
-        .faq-question {
-            padding: 1.4rem 2rem;
-            font-weight: 650;
+
+        .accord-question {
+            padding: 1.5rem 2rem;
+            font-weight: 600;
             font-size: 1.25rem;
-            color: #172c56;
+            color: #d3e2ff;
             cursor: pointer;
             position: relative;
-            list-style: none;
+            border-radius: 1.8rem;
             transition: 0.2s;
-            border-radius: 24px;
         }
-        .faq-question::after {
-            content: "▾";
+
+        .accord-question:after {
+            content: "⏷";
             position: absolute;
             right: 2rem;
-            font-size: 1.6rem;
-            color: #2563eb;
-            transition: 0.2s;
+            font-size: 1.8rem;
+            color: #6086cf;
         }
-        .faq-item.active .faq-question::after {
-            transform: rotate(180deg);
+
+        .accord-item.active .accord-question:after {
+            content: "⏶";
         }
-        .faq-answer {
-            padding: 0 2rem 1.6rem 2rem;
-            margin-top: -0.8rem;
-            color: #2f405e;
+
+        .accord-answer {
+            padding: 0 2rem 1.8rem 2rem;
+            color: #b8c9ec;
             display: none;
+            font-size: 1.05rem;
         }
-        .faq-item.active .faq-answer {
+
+        .accord-item.active .accord-answer {
             display: block;
         }
-        hr {
-            border: 1px solid #c7daf0;
-            margin: 2.8rem 0;
+
+        .footer-note {
+            text-align: center;
+            color: #6f85ac;
+            margin-top: 3rem;
+            border-top: 1px solid #273a55;
+            padding-top: 2rem;
+            font-size: 0.95rem;
         }
-        @media (max-width: 700px) {
-            .trust-card { padding: 2rem 1.5rem; }
-            h1 { font-size: 2.2rem; }
-            h2 { font-size: 1.8rem; }
+
+        @media (max-width: 800px) {
+            .grid-2 { grid-template-columns: 1fr; }
+            .delta-card { padding: 1.8rem; }
+            h1 { font-size: 2.6rem; }
         }
     </style>
 </head>
 <body>
-    <div class="trust-card">
-        <div class="content">
-            <div class="brand-logo">
-                <img src="https://deltaxecutor.com.br/wp-content/uploads/al_opt_content/IMAGE/deltaxecutor.com.br/wp-content/uploads/2025/11/cropped-Delta-Executor-4.webp.bv.webp?bv_host=deltaxecutor.com.br" alt="Delta Executor identidade visual">
+    <div class="delta-card">
+        <div class="glass-panel">
+            <div class="logo-area">
+                <img src="https://deltaxecutor.com.br/wp-content/uploads/al_opt_content/IMAGE/deltaxecutor.com.br/wp-content/uploads/2025/11/cropped-Delta-Executor-4.webp.bv.webp?bv_host=deltaxecutor.com.br" alt="Delta Executor logotipo">
             </div>
 
-            <h1>Delta Executor: o guia definitivo (sem exageros)</h1>
-            <p>Se você pesquisa sobre <strong>executores de script para Roblox</strong>, já esbarrou no nome Delta. Mas a informação é fragmentada e cheia de armadilhas. Aqui você encontra uma visão 360° — desde o funcionamento até os riscos reais de banimento e infecção. E, claro, como diferenciar o site oficial de páginas fraudulentas. Nosso objetivo é que você tome decisões com consciência.</p>
+            <h1>Delta Executor: análise técnica & acesso oficial</h1>
+            <div class="subhead">O guia definitivo para quem busca fatos, não fantasia — riscos, funcionamento e como identificar o site legítimo.</div>
 
-            <img class="img-responsive" src="https://i.ytimg.com/vi/HZKKLOLf4X8/maxresdefault.jpg" alt="Delta Executor interface mostrando injeção de script">
+            <!-- imagem ilustrativa -->
+            <img class="img-fluid" src="https://i.ytimg.com/vi/HZKKLOLf4X8/maxresdefault.jpg" alt="Delta Executor em uso no Windows">
 
-            <h2>O que o Delta Executor realmente faz?</h2>
-            <p>É um software criado por terceiros que injeta código Lua no processo do Roblox. Com isso, usuários conseguem executar comandos, automatizar ações ou modificar aspectos visuais não permitidos oficialmente. Diferente de exploits complexos, o Delta se popularizou pela interface considerada amigável e pela promessa de suporte a múltiplas versões do Windows (e, em alguns casos, mobile). Mas lembre-se: nenhum executor é "aprovado" pela Roblox Corporation.</p>
-
-            <div class="feature-block">
-                <h3 style="margin-top: 0;">Funcionalidades mais comentadas</h3>
-                <p>✔ Editor de script com syntax highlight básico<br>✔ Injeção rápida (geralmente em segundos)<br>✔ Compatibilidade com diversas execuções de Lua (nível médio)<br>✔ Comunidade ativa que compartilha códigos prontos</p>
-                <p>Porém, recursos como "bypass anti-cheat total" são <strong>exageros de marketing</strong>. Nenhum executor garante invisibilidade completa.</p>
+            <div class="grid-2">
+                <div class="info-panel">
+                    <h2>⚙️ Funcionamento real</h2>
+                    <p><strong>Delta Executor</strong> é um injetor de scripts Lua que se acopla ao processo do Roblox. Ele permite executar comandos personalizados, desde simples mods visuais até automações complexas. Sua interface é considerada limpa, com editor de código, console e suporte a múltiplas execuções. Porém, diferente do que alguns divulgam, <span style="color:#e6b800;">não há "modo invisível" garantido</span> contra o anti-cheat Byfron.</p>
+                    <p>🔹 Atualizações frequentes (quando o jogo atualiza, o executor para de funcionar até um novo bypass)<br>
+                    🔹 Comunidade que compartilha scripts prontos — muitos desatualizados ou com payload oculto.</p>
+                </div>
+                <div class="info-panel">
+                    <h2>💀 Riscos documentados</h2>
+                    <span class="hazard-tag">ameaça real</span>
+                    <ul>
+                        <li><strong>Banimento irreversível:</strong> contas principais com itens pagos são as maiores vítimas.</li>
+                        <li><strong>Malware em 90% dos sites falsos:</strong> keyloggers, stealers e ransomware são comuns em downloads não oficiais.</li>
+                        <li><strong>Instabilidade:</strong> scripts maliciosos podem travar o PC ou corromper arquivos do sistema.</li>
+                        <li><strong>Perda de dados:</strong> versões adulteradas capturam cookies, senhas e até carteiras de cripto.</li>
+                    </ul>
+                </div>
             </div>
 
-            <h2>🔍 A importância de acessar o site oficial</h2>
-            <p>A maior ameaça não é o executor em si, mas sim os milhares de sites falsos que distribuem versões modificadas com <strong>trojans, stealers ou ransomware</strong>. Baixar de fontes não confiáveis é a porta de entrada para invasões de contas, roubo de dados bancários e sequestro de arquivos pessoais. O <strong>único domínio legítimo conhecido até o momento</strong> é o <strong>deltaxecutor.com.br</strong> (sempre verifique o SSL e a reputação). Mesmo assim, mantenha o antivírus ativo e desconfie de cracks "milagrosos".</p>
-
-            <div class="action-center">
-                <a href="https://deltaxecutor.com.br/" target="_blank" rel="nofollow" class="oficial-link">🔐 Canal oficial Delta Executor</a>
-                <div class="disclaimer-small">Ao clicar, você confirma que leu os avisos sobre riscos e assume total responsabilidade.</div>
+            <!-- chamada site oficial -->
+            <div style="text-align: center; background: #0d1628; border-radius: 4rem; padding: 2rem; margin: 2rem 0; border: 1px solid #2d4870;">
+                <span class="badge-safe">✅ ORIGEM VERIFICADA (REFERÊNCIA)</span>
+                <p style="color: #d0e0ff; font-size: 1.2rem; margin: 1.2rem 0;">O único domínio consistentemente apontado como legítimo é <strong style="color:white;">deltaxecutor.com.br</strong>. Fora dele, a probabilidade de fraude é altíssima.</p>
+                <a href="https://deltaxecutor.com.br/" target="_blank" rel="nofollow" class="button-x">🔗 ACESSAR SITE OFICIAL</a>
+                <p style="color: #9bb0d3; margin-top: 1rem;">você assume total responsabilidade pelo uso • maiores de idade apenas</p>
             </div>
 
-            <div class="danger-zone">
-                <span class="shield-badge">⚠️ LEIA ANTES DE QUALQUER AÇÃO</span>
-                <h3>Banimentos, malwares e consequências reais</h3>
-                <p><strong>Banimento em massa:</strong> a Roblox atualiza constantemente seus sistemas de detecção. Usar qualquer injetor pode levar ao banimento permanente da conta, inclusive a perda de itens pagos. Contas secundárias são menos dolorosas, mas o risco persiste.</p>
-                <p><strong>Códigos maliciosos disfarçados:</strong> muitos "canais de divulgação" no YouTube ou Telegram compartilham executores com backdoors. Um simples clique pode dar acesso remoto ao seu PC. Sempre faça upload do arquivo .exe em sites como VirusTotal antes de executar.</p>
-                <p><strong>Instabilidade e bugs:</strong> scripts mal feitos podem travar o jogo, corromper saves locais ou causar crashes constantes. Além disso, após uma atualização do Roblox, o executor pode ficar dias inoperante.</p>
+            <!-- painel alternativo ético -->
+            <div style="background: #172434; border-radius: 2.5rem; padding: 2rem; margin: 2.5rem 0;">
+                <h2 style="color: #bbd6ff; font-size: 1.9rem; margin-bottom: 1rem;">🎮 Alternativa construtiva: Roblox Studio</h2>
+                <p style="color: #b2caf2;">Se a sua curiosidade é sobre scripts e criação, o <strong>Roblox Studio</strong> é a via oficial e sem riscos. Você aprende Lua de verdade, desenvolve jogos publicáveis e ainda pode monetizar. Existe uma comunidade gigante e documentação oficial gratuita. Diferente de executores, essa habilidade é valorizada no mercado de jogos.</p>
+                <img class="img-fluid" src="https://deltaxecutor.com.br/wp-content/uploads/al_opt_content/IMAGE/deltaxecutor.com.br/wp-content/uploads/2025/12/Delta-Executor-1.webp.bv.webp?bv_host=deltaxecutor.com.br" alt="Roblox Studio vs Executor" style="margin-top: 0.5rem;">
             </div>
 
-            <h2>Caminhos éticos: vale a pena usar Roblox Studio?</h2>
-            <p>Se o que te atrai é a possibilidade de criar e modificar, o <strong>Roblox Studio</strong> é a ferramenta oficial e completamente segura. Você aprende Lua de verdade, desenvolve jogos publicáveis e ainda pode ganhar Robux com criação de conteúdo. Existe uma infinidade de tutoriais gratuitos e uma comunidade enorme. O conhecimento adquirido é valorizado no mercado de games, ao contrário do estigma de usar exploits.</p>
-
-            <img class="img-responsive" src="https://deltaxecutor.com.br/wp-content/uploads/al_opt_content/IMAGE/deltaxecutor.com.br/wp-content/uploads/2025/12/Delta-Executor-1.webp.bv.webp?bv_host=deltaxecutor.com.br" alt="Comparação entre usar executor e desenvolver no Roblox Studio">
-
-            <h2>Perguntas frequentes (FAQ) — versão sem enrolação</h2>
-
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)">É verdade que o Delta Executor pode conter vírus?</div>
-                <div class="faq-answer">Sim. Principalmente se baixado de sites espelhos, fóruns suspeitos ou links de terceiros. A versão original (do site oficial) já foi analisada por alguns antivírus como de risco potencial devido à técnica de injeção, mas sem malwares embutidos. Contudo, use com extrema cautela e sempre escaneie.</div>
+            <!-- FAQ interativo -->
+            <div class="accordion">
+                <div class="accord-item active">
+                    <div class="accord-question" onclick="toggleAccord(this)">O download do Delta Executor é seguro?</div>
+                    <div class="accord-answer">Depende da fonte. O binário original (do site oficial) não contém malware ativo, mas ainda aciona alertas de antivírus por ser um injetor. Já versões de sites espelho, YouTube ou Telegram quase sempre vêm com trojans. A dica: baixe exclusivamente de https://deltaxecutor.com.br/ e escaneie no VirusTotal antes de executar.</div>
+                </div>
+                <div class="accord-item">
+                    <div class="accord-question" onclick="toggleAccord(this)">Delta Executor funciona no celular?</div>
+                    <div class="accord-answer">Circulam versões .apk para Android, mas o índice de malwares nessas builds é altíssimo. Roblox monitora dispositivos móveis da mesma forma e banimentos são comuns. A orientação é evitar completamente executores mobile.</div>
+                </div>
+                <div class="accord-item">
+                    <div class="accord-question" onclick="toggleAccord(this)">Quais as chances de banimento em 2024?</div>
+                    <div class="accord-answer">Com a implementação do Byfron (Hyperion), a detecção se tornou muito mais agressiva. Relatos de banimento em contas principais aumentaram. Não é uma questão de "se", mas de "quando" — especialmente se usado com scripts vantagem.</div>
+                </div>
+                <div class="accord-item">
+                    <div class="accord-question" onclick="toggleAccord(this)">Como diferenciar o site oficial dos falsos?</div>
+                    <div class="accord-answer">URL estranha? Ex: delta-executor.net, deltax.org, etc. O oficial é https://deltaxecutor.com.br/. Além disso, sites falsos costumam ter pop-ups agressivos, botões de download duvidosos e ausência de comunidade ou suporte real.</div>
+                </div>
             </div>
 
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)">Qual a chance real de banimento?</div>
-                <div class="faq-answer">Alta. O anti-cheat do Roblox (Byfron) evoluiu muito. Usuários de executores estão sendo banidos em ondas. Se você utiliza na conta principal com compras, o prejuízo pode ser grande. Não existe executor 100% indetectável.</div>
+            <!-- frases finais -->
+            <div style="margin-top: 3rem; background: #0c1422; border-radius: 2.5rem; padding: 2rem;">
+                <h2 style="color:#d6e5ff;">📌 Decisão consciente</h2>
+                <p style="color:#b8cef0;">O Delta Executor é uma ferramenta que entrega poder, mas cobra um preço que muitos subestimam: conta, dados, privacidade. Caso, após todos os alertas, você opte pelo uso, faça isso em uma máquina isolada, com conta secundária e apenas via site oficial. Para todos os demais, o Roblox Studio é o caminho inteligente e sem dor de cabeça.</p>
+                <div style="text-align: center; margin: 2rem 0 0.5rem;">
+                    <a href="https://deltaxecutor.com.br/" target="_blank" rel="nofollow" style="background: #1e2b42; color: white; padding: 0.9rem 2.4rem; border-radius: 3rem; text-decoration: none; font-weight: 600; border: 1px solid #5675b9;">↗️ Ir para o site oficial (delta executor)</a>
+                </div>
             </div>
 
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)">Delta Executor funciona em celular?</div>
-                <div class="faq-answer">Existem versões para Android divulgadas, mas a taxa de malwares nessas builds é altíssima. Além disso, a Roblox monitora dispositivos móveis da mesma forma. Recomendamos fortemente evitar executores mobile.</div>
+            <div class="footer-note">
+                <p>Conteúdo independente para fins informativos. Não nos responsabilizamos pelo uso indevido. Respeite os Termos de Serviço do Roblox.</p>
             </div>
-
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)">Como identificar o site oficial verdadeiro?</div>
-                <div class="faq-answer">Desconfie de URLs estranhas. O site legítimo é o https://deltaxecutor.com.br/. Verifique se há HTTPS, design limpo e ausência de pop-ups de "download rápido". Sempre pesquise referências recentes em comunidades de segurança.</div>
-            </div>
-
-            <hr>
-
-            <h2>Veredito final: informação sólida é seu escudo</h2>
-            <p><strong>Delta Executor</strong> é uma ferramenta poderosa para quem quer explorar os limites do Roblox, mas o preço pode ser alto: sua conta, seus dados ou a integridade do seu dispositivo. Caso você, adulto e ciente dos riscos, opte por testar, faça isso em um ambiente isolado (máquina virtual ou PC secundário) e <strong>sempre a partir do site oficial</strong>. Para todos os outros, o Roblox Studio oferece um universo criativo sem colocar sua segurança em jogo. A decisão, como sempre, é pessoal — mas agora você tem todos os fatos.</p>
-
-            <div style="text-align: center; margin: 3rem 0 1.2rem;">
-                <a href="https://deltaxecutor.com.br/" target="_blank" rel="nofollow" style="background: #1a2b4c; color: white; padding: 0.9rem 2.5rem; border-radius: 60px; text-decoration: none; font-weight: 600; box-shadow: 0 6px 14px #00000030;">➡️ Ir para o site oficial (delta executor)</a>
-            </div>
-            <p style="text-align: center; color: #546e7a;">Este conteúdo é apenas informativo. Não incentivamos violação de Termos de Serviço.</p>
         </div>
     </div>
 
     <script>
-        function toggleFaq(el) {
-            const parent = el.closest('.faq-item');
-            if (parent) {
-                parent.classList.toggle('active');
+        function toggleAccord(el) {
+            const item = el.closest('.accord-item');
+            if (item) {
+                item.classList.toggle('active');
             }
         }
     </script>
